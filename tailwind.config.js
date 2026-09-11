@@ -1,0 +1,26 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    colors: {
+      background: 'var(--background)',
+      foreground: 'var(--foreground)',
+    },
+    fontFamily: {
+      sans: ['var(--font-geist-sans)'],
+      mono: ['var(--font-geist-mono)'],
+    },
+  },
+  plugins: [],
+  theme: {
+    extend: {
+      colors: {
+        "orange-accent": "#F77D36",
+      },
+    },
+  }
+}
